@@ -10,6 +10,15 @@
 [![Better Auth 1.7+](https://img.shields.io/badge/Better_Auth-1.7+-indigo?style=flat)](https://better-auth.com/)
 [![Vercel AI SDK 7](https://img.shields.io/badge/Vercel_AI_SDK-v7-black)](https://sdk.vercel.ai/)
 [![Stripe & Inngest](https://img.shields.io/badge/Stripe_%26_Inngest-Durable_Webhooks-6366f1)](https://inngest.com/)
+[![Live Deployment](https://img.shields.io/badge/Live_Demo-ai--taskpilot--szn.vercel.app-000000?style=flat&logo=vercel)](https://ai-taskpilot-szn.vercel.app)
+
+---
+
+## 🌐 Live Production URL
+* **Production Deployment:** [https://ai-taskpilot-szn.vercel.app](https://ai-taskpilot-szn.vercel.app)
+* **Demo Workspace:** [https://ai-taskpilot-szn.vercel.app/acme-corp](https://ai-taskpilot-szn.vercel.app/acme-corp)
+* **Kanban Board:** [https://ai-taskpilot-szn.vercel.app/acme-corp/projects/TP/kanban](https://ai-taskpilot-szn.vercel.app/acme-corp/projects/TP/kanban)
+* **Executive Telemetry:** [https://ai-taskpilot-szn.vercel.app/acme-corp/analytics](https://ai-taskpilot-szn.vercel.app/acme-corp/analytics)
 
 ---
 

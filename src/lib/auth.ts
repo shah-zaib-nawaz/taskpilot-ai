@@ -19,7 +19,7 @@ export const auth = betterAuth({
     },
   }),
   secret: process.env.BETTER_AUTH_SECRET || 'taskpilot_ultra_secure_better_auth_secret_key_2026',
-  baseURL: process.env.BETTER_AUTH_URL || 'http://localhost:3000',
+  baseURL: process.env.BETTER_AUTH_URL || process.env.NEXT_PUBLIC_APP_URL || 'https://ai-taskpilot-szn.vercel.app',
   emailAndPassword: {
     enabled: true,
   },
