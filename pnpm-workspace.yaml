@@ -1,0 +1,17 @@
+allowBuilds:
+  esbuild: true
+  protobufjs: true
+minimumReleaseAgeExclude:
+  - '@ai-sdk/gateway@4.0.127'
+  - '@ai-sdk/google@4.0.106'
+  - '@ai-sdk/provider-utils@5.0.69'
+  - '@better-auth/core@1.7.14'
+  - '@better-auth/drizzle-adapter@1.7.14'
+  - '@better-auth/kysely-adapter@1.7.14'
+  - '@better-auth/memory-adapter@1.7.14'
+  - '@better-auth/mongo-adapter@1.7.14'
+  - '@better-auth/prisma-adapter@1.7.14'
+  - '@better-auth/telemetry@1.7.14'
+  - ai@7.0.154
+  - better-auth@1.7.14
+  - lucide-react@1.62.0

@@ -1,0 +1,42 @@
+<svg width="400" height="280" viewBox="0 0 400 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="aiOrbGrad" x1="160" y1="80" x2="240" y2="180" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#818CF8"/>
+      <stop offset="50%" stop-color="#4F46E5"/>
+      <stop offset="100%" stop-color="#312E81"/>
+    </linearGradient>
+    <radialGradient id="aiPulse" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(200 130) rotate(90) scale(100)">
+      <stop offset="0%" stop-color="#6366F1" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#4F46E5" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Ambient Glow -->
+  <circle cx="200" cy="130" r="90" fill="url(#aiPulse)"/>
+
+  <!-- Neural Mesh / Nodes -->
+  <path d="M120 130L160 110L200 130L240 110L280 130" stroke="#4F46E5" stroke-opacity="0.4" stroke-width="2" stroke-dasharray="3 3"/>
+  <path d="M140 170L170 145L200 130L230 145L260 170" stroke="#818CF8" stroke-opacity="0.3" stroke-width="2"/>
+
+  <!-- Node Circles -->
+  <circle cx="120" cy="130" r="5" fill="#38BDF8"/>
+  <circle cx="280" cy="130" r="5" fill="#38BDF8"/>
+  <circle cx="160" cy="110" r="4" fill="#818CF8"/>
+  <circle cx="240" cy="110" r="4" fill="#818CF8"/>
+  <circle cx="140" cy="170" r="4" fill="#6366F1"/>
+  <circle cx="260" cy="170" r="4" fill="#6366F1"/>
+
+  <!-- Central Intelligence Orb -->
+  <circle cx="200" cy="130" r="40" fill="url(#aiOrbGrad)" filter="drop-shadow(0 10px 25px rgba(79, 70, 229, 0.45))"/>
+  <circle cx="200" cy="130" r="39" stroke="white" stroke-opacity="0.25"/>
+
+  <!-- Gemini Sparkle Geometry -->
+  <path d="M200 106L204 122L220 126L204 130L200 146L196 130L180 126L196 122Z" fill="white"/>
+
+  <!-- Floating Status Card -->
+  <g transform="translate(130, 210)">
+    <rect width="140" height="32" rx="16" fill="#1E1B4B" stroke="#4F46E5" stroke-opacity="0.6"/>
+    <circle cx="20" cy="16" r="4" fill="#10B981"/>
+    <text x="32" y="20" fill="#E0E7FF" font-family="system-ui, sans-serif" font-size="11" font-weight="600">Gemini 3.1 Ready</text>
+  </g>
+</svg>

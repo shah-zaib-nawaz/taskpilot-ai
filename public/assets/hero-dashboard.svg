@@ -1,0 +1,139 @@
+<svg width="1200" height="720" viewBox="0 0 1200 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1200" y2="720" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#1E1B4B"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0" y1="0" x2="300" y2="180" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1E293B" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="primaryGrad" x1="0" y1="0" x2="200" y2="40" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#6366F1"/>
+      <stop offset="100%" stop-color="#4F46E5"/>
+    </linearGradient>
+    <linearGradient id="accentGlow" x1="600" y1="0" x2="600" y2="400" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#4F46E5" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="softShadow" x="-10" y="-10" width="1220" height="740">
+      <feDropShadow dx="0" dy="25" stdDeviation="30" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- Ambient Glow Behind App Canvas -->
+  <rect x="100" y="40" width="1000" height="640" rx="30" fill="url(#accentGlow)" filter="blur(40px)"/>
+
+  <!-- Main Window Container -->
+  <g filter="url(#softShadow)">
+    <rect x="40" y="40" width="1120" height="640" rx="16" fill="url(#bgGrad)" stroke="#334155" stroke-width="1.5"/>
+
+    <!-- Mac-style Window Controls & Title Bar -->
+    <rect x="40" y="40" width="1120" height="52" rx="16" fill="#0F172A"/>
+    <path d="M40 76H1160" stroke="#1E293B" stroke-width="1"/>
+    <circle cx="70" cy="66" r="6" fill="#EF4444"/>
+    <circle cx="90" cy="66" r="6" fill="#F59E0B"/>
+    <circle cx="110" cy="66" r="6" fill="#10B981"/>
+
+    <!-- Project Breadcrumb & Status -->
+    <rect x="140" y="54" width="24" height="24" rx="6" fill="#4F46E5"/>
+    <text x="174" y="71" fill="#F8FAFC" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600">TaskPilot Core / Launch Roadmap v2.0</text>
+    <rect x="480" y="56" width="100" height="20" rx="10" fill="#10B981" fill-opacity="0.15" stroke="#10B981" stroke-opacity="0.4"/>
+    <circle cx="492" cy="66" r="3.5" fill="#10B981"/>
+    <text x="502" y="70" fill="#34D399" font-family="system-ui" font-size="11" font-weight="600">SPRINT ON TRACK</text>
+
+    <!-- Top Right Actions -->
+    <rect x="940" y="52" width="90" height="28" rx="6" fill="#1E293B" stroke="#334155"/>
+    <text x="965" y="70" fill="#CBD5E1" font-family="system-ui" font-size="12">⌘K Search</text>
+    <rect x="1040" y="52" width="100" height="28" rx="6" fill="url(#primaryGrad)"/>
+    <text x="1055" y="70" fill="#FFFFFF" font-family="system-ui" font-size="12" font-weight="600">+ AI Architect</text>
+
+    <!-- Left Mini-Sidebar -->
+    <rect x="40" y="92" width="220" height="588" fill="#090D16" stroke-width="0"/>
+    <path d="M260 92V680" stroke="#1E293B" stroke-width="1"/>
+
+    <!-- Sidebar Nav Items -->
+    <rect x="56" y="116" width="188" height="36" rx="8" fill="#4F46E5" fill-opacity="0.15"/>
+    <text x="92" y="139" fill="#818CF8" font-family="system-ui" font-size="13" font-weight="600">Kanban Board</text>
+    <text x="92" y="175" fill="#94A3B8" font-family="system-ui" font-size="13">List &amp; Backlog</text>
+    <text x="92" y="211" fill="#94A3B8" font-family="system-ui" font-size="13">Roadmap &amp; Timeline</text>
+    <text x="92" y="247" fill="#94A3B8" font-family="system-ui" font-size="13">Sprint Analytics</text>
+    <text x="92" y="283" fill="#94A3B8" font-family="system-ui" font-size="13">AI Executive Digest</text>
+
+    <!-- AI Architect Floating Banner -->
+    <rect x="280" y="112" width="860" height="68" rx="12" fill="#1E1B4B" stroke="#4F46E5" stroke-opacity="0.5" stroke-dasharray="4 4"/>
+    <circle cx="316" cy="146" r="16" fill="#4F46E5"/>
+    <path d="M312 146L320 142L316 150L314 147L312 146Z" fill="white"/>
+    <text x="344" y="138" fill="#EEF2FF" font-family="system-ui" font-size="14" font-weight="600">AI Project Architect synthesized 14 tasks &amp; 4 milestone phases</text>
+    <text x="344" y="158" fill="#A5B4FC" font-family="system-ui" font-size="12">DAG cycle detection verified (0 deadlocks) · Target completion: Nov 18, 2026</text>
+    <rect x="1010" y="130" width="110" height="32" rx="6" fill="#4F46E5"/>
+    <text x="1026" y="151" fill="#FFFFFF" font-family="system-ui" font-size="12" font-weight="600">Review &amp; Commit</text>
+
+    <!-- Kanban Column 1: TODO -->
+    <g transform="translate(280, 200)">
+      <rect x="0" y="0" width="270" height="460" rx="10" fill="#0F172A" fill-opacity="0.6" stroke="#1E293B"/>
+      <text x="16" y="28" fill="#94A3B8" font-family="system-ui" font-size="13" font-weight="700">TO DO</text>
+      <circle cx="242" cy="24" r="10" fill="#1E293B"/>
+      <text x="238" y="28" fill="#94A3B8" font-family="monospace" font-size="11">3</text>
+
+      <!-- Card 1 -->
+      <rect x="12" y="44" width="246" height="110" rx="8" fill="url(#cardGrad)" stroke="#334155" stroke-width="1"/>
+      <rect x="24" y="56" width="56" height="18" rx="4" fill="#64748B" fill-opacity="0.2"/>
+      <text x="30" y="69" fill="#94A3B8" font-family="monospace" font-size="10">TP-101</text>
+      <rect x="86" y="56" width="50" height="18" rx="4" fill="#3B82F6" fill-opacity="0.2"/>
+      <text x="92" y="69" fill="#60A5FA" font-family="system-ui" font-size="10">AUTH</text>
+      <text x="24" y="96" fill="#F1F5F9" font-family="system-ui" font-size="13" font-weight="600">Better Auth RBAC setup</text>
+      <circle cx="236" cy="132" r="10" fill="#6366F1"/>
+      <text x="233" y="136" fill="white" font-family="system-ui" font-size="10">JD</text>
+      <text x="24" y="136" fill="#64748B" font-family="monospace" font-size="11">5 pts · Nov 04</text>
+
+      <!-- Card 2 -->
+      <rect x="12" y="164" width="246" height="100" rx="8" fill="url(#cardGrad)" stroke="#334155" stroke-width="1"/>
+      <rect x="24" y="176" width="56" height="18" rx="4" fill="#64748B" fill-opacity="0.2"/>
+      <text x="30" y="189" fill="#94A3B8" font-family="monospace" font-size="10">TP-102</text>
+      <text x="24" y="214" fill="#F1F5F9" font-family="system-ui" font-size="13" font-weight="600">Stripe Billing Webhooks</text>
+      <circle cx="236" cy="244" r="10" fill="#EC4899"/>
+      <text x="233" y="248" fill="white" font-family="system-ui" font-size="10">AL</text>
+      <text x="24" y="248" fill="#64748B" font-family="monospace" font-size="11">8 pts · Nov 07</text>
+    </g>
+
+    <!-- Kanban Column 2: IN PROGRESS -->
+    <g transform="translate(575, 200)">
+      <rect x="0" y="0" width="270" height="460" rx="10" fill="#0F172A" fill-opacity="0.6" stroke="#1E293B"/>
+      <text x="16" y="28" fill="#818CF8" font-family="system-ui" font-size="13" font-weight="700">IN PROGRESS</text>
+      <circle cx="242" cy="24" r="10" fill="#312E81"/>
+      <text x="238" y="28" fill="#818CF8" font-family="monospace" font-size="11">2</text>
+
+      <!-- Active Card -->
+      <rect x="12" y="44" width="246" height="130" rx="8" fill="url(#cardGrad)" stroke="#6366F1" stroke-width="1.5"/>
+      <rect x="24" y="56" width="56" height="18" rx="4" fill="#64748B" fill-opacity="0.2"/>
+      <text x="30" y="69" fill="#94A3B8" font-family="monospace" font-size="10">TP-103</text>
+      <rect x="86" y="56" width="56" height="18" rx="4" fill="#F43F5E" fill-opacity="0.2"/>
+      <text x="92" y="69" fill="#FB7185" font-family="system-ui" font-size="10">URGENT</text>
+      <text x="24" y="96" fill="#F1F5F9" font-family="system-ui" font-size="13" font-weight="600">DAG cycle detection</text>
+      <!-- Subtask Progress Bar -->
+      <rect x="24" y="112" width="222" height="6" rx="3" fill="#1E293B"/>
+      <rect x="24" y="112" width="166" height="6" rx="3" fill="#10B981"/>
+      <text x="24" y="148" fill="#64748B" font-family="monospace" font-size="11">3/4 subtasks</text>
+      <circle cx="236" cy="148" r="10" fill="#10B981"/>
+      <text x="233" y="152" fill="white" font-family="system-ui" font-size="10">MK</text>
+    </g>
+
+    <!-- Kanban Column 3: DONE -->
+    <g transform="translate(870, 200)">
+      <rect x="0" y="0" width="270" height="460" rx="10" fill="#0F172A" fill-opacity="0.6" stroke="#1E293B"/>
+      <text x="16" y="28" fill="#34D399" font-family="system-ui" font-size="13" font-weight="700">COMPLETED</text>
+      <circle cx="242" cy="24" r="10" fill="#064E3B"/>
+      <text x="238" y="28" fill="#34D399" font-family="monospace" font-size="11">4</text>
+
+      <!-- Completed Card -->
+      <rect x="12" y="44" width="246" height="96" rx="8" fill="url(#cardGrad)" stroke="#1E293B" stroke-width="1" opacity="0.8"/>
+      <rect x="24" y="56" width="56" height="18" rx="4" fill="#64748B" fill-opacity="0.2"/>
+      <text x="30" y="69" fill="#94A3B8" font-family="monospace" font-size="10">TP-098</text>
+      <rect x="86" y="56" width="68" height="18" rx="4" fill="#10B981" fill-opacity="0.2"/>
+      <text x="92" y="69" fill="#34D399" font-family="system-ui" font-size="10">VERIFIED</text>
+      <text x="24" y="96" fill="#CBD5E1" font-family="system-ui" font-size="13" font-weight="500">PostgreSQL Schema Migrations</text>
+      <text x="24" y="122" fill="#10B981" font-family="system-ui" font-size="11">✓ Drizzle v1.0 deployed</text>
+    </g>
+  </g>
+</svg>

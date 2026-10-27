@@ -1,0 +1,39 @@
+<svg width="400" height="280" viewBox="0 0 400 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="kanban-base" x1="50" y1="40" x2="350" y2="240" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#4F46E5" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#818CF8" stop-opacity="0.02"/>
+    </linearGradient>
+    <linearGradient id="col-grad" x1="0" y1="0" x2="0" y2="160" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#6366F1" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#6366F1" stop-opacity="0.03"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Ground Shadow / Base -->
+  <ellipse cx="200" cy="245" rx="140" ry="18" fill="#4F46E5" fill-opacity="0.08"/>
+
+  <!-- Ghost Kanban Board Columns -->
+  <rect x="70" y="60" width="76" height="150" rx="8" fill="url(#col-grad)" stroke="#4F46E5" stroke-opacity="0.25" stroke-dasharray="4 4"/>
+  <rect x="162" y="50" width="76" height="160" rx="8" fill="url(#col-grad)" stroke="#4F46E5" stroke-opacity="0.35"/>
+  <rect x="254" y="60" width="76" height="150" rx="8" fill="url(#col-grad)" stroke="#4F46E5" stroke-opacity="0.25" stroke-dasharray="4 4"/>
+
+  <!-- Column Header Pills -->
+  <rect x="80" y="72" width="40" height="8" rx="4" fill="#94A3B8" fill-opacity="0.4"/>
+  <rect x="172" y="62" width="44" height="8" rx="4" fill="#4F46E5" fill-opacity="0.6"/>
+  <rect x="264" y="72" width="38" height="8" rx="4" fill="#94A3B8" fill-opacity="0.4"/>
+
+  <!-- Floating Active Card in Center -->
+  <g transform="translate(170, 84)">
+    <rect width="60" height="64" rx="6" fill="#FFFFFF" stroke="#4F46E5" stroke-width="1.5" filter="drop-shadow(0 8px 16px rgba(79, 70, 229, 0.18))"/>
+    <rect x="8" y="10" width="22" height="6" rx="3" fill="#4F46E5"/>
+    <rect x="8" y="22" width="44" height="4" rx="2" fill="#CBD5E1"/>
+    <rect x="8" y="30" width="34" height="4" rx="2" fill="#E2E8F0"/>
+    <circle cx="48" cy="48" r="5" fill="#10B981"/>
+  </g>
+
+  <!-- Sparkle & AI Pulse -->
+  <circle cx="270" cy="50" r="3" fill="#6366F1"/>
+  <path d="M125 40L128 46L134 49L128 52L125 58L122 52L116 49L122 46Z" fill="#F59E0B" fill-opacity="0.8"/>
+  <path d="M285 180L287 184L291 186L287 188L285 192L283 188L279 186L283 184Z" fill="#38BDF8"/>
+</svg>
